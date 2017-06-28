@@ -18,7 +18,7 @@ export const mainDirectories = {
 export const settings = {
 	sources: {
 		html: ['./src/*.html'],
-		handlebars: ['./src/*.hbs'],
+		markdown: ['./src/*.md'],
 		styles: ['./src/assets/scss/**/*.scss'],
 		stylesEntryPoint: './src/assets/scss/index.scss',
 		scripts: ['./src/app/**/*.js'],
@@ -30,7 +30,7 @@ export const settings = {
 		staticFiles: pkgJson.baumeister.includeStaticFiles
 	},
 	destinations: {
-		handlebars: './.metalsmith-build',
+		generatedHtml: './.metalsmith-build',
 		dev: {
 			html: `${mainDirectories.dev}`,
 			styles: `${mainDirectories.dev}assets/css/`,

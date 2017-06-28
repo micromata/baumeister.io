@@ -64,7 +64,7 @@ export function watch() {
 
 	if (useHandlebars) {
 		gulp.watch([
-			...settings.sources.handlebars,
+			...settings.sources.markdown,
 			'./src/handlebars/layouts/*.hbs',
 			'./src/handlebars/partials/**/*.hbs',
 			'./src/handlebars/helpers/*.js'

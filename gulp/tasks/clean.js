@@ -18,13 +18,13 @@ function clean() {
 		return del([
 			...browserifyCache,
 			mainDirectories.dist,
-			settings.destinations.handlebars
+			settings.destinations.generatedHtml
 		]);
 	}
 	return del([
 		...browserifyCache,
 		mainDirectories.dev,
-		settings.destinations.handlebars
+		settings.destinations.generatedHtml
 	]);
 }
 

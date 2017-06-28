@@ -2,8 +2,8 @@ import gulp from 'gulp';
 import frontmatter from 'gulp-front-matter';
 import gulpsmith from 'gulpsmith';
 
+const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
-const inPlace = require('metalsmith-in-place');
 const registerHelpers = require('metalsmith-register-helpers');
 
 import {settings, useHandlebars} from '../config';
@@ -15,7 +15,7 @@ function handlebars(done) {
 
 	if (!useHandlebars) return done();
 
-	return gulp.src(settings.sources.handlebars)
+	return gulp.src(settings.sources.markdown)
 		.pipe(frontmatter()).on('data', (file) => {
 			Object.assign(file, file.frontMatter);
 			delete file.frontMatter;
@@ -25,23 +25,18 @@ function handlebars(done) {
 			.use(registerHelpers({
 				directory: 'src/handlebars/helpers'
 			}))
+			.use(markdown())
 			.use(layouts({ // Wrap layouts around content pages
 				engine: 'handlebars',
-				rename: false,
+				rename: true,
 				directory: 'src/handlebars/layouts',
 				default: 'default.hbs',
-				pattern: '*.hbs',
+				pattern: '*.html',
 				partials: 'src/handlebars/partials',
 				partialExtension: '.hbs'
 			}))
-			.use(inPlace({ // Render handlebars content pages
-				engineOptions: {
-					pattern: '*.hbs',
-					partials: 'src/handlebars/partials'
-				}
-			}))
 		)
-		.pipe(gulp.dest(settings.destinations.handlebars));
+		.pipe(gulp.dest(settings.destinations.generatedHtml));
 }
 
 export default handlebars;
