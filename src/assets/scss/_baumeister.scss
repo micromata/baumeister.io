@@ -1,10 +1,12 @@
 // Override and extend Bootstrap stuff
 // --------------------------------------------------
 // Files, classes, mixins etc.
+@import "baumeister/scaffolding";
 
 // Own modules
 // --------------------------------------------------
 // @import "baumeister/testResponsiveHelpers"; // debug
+@import "baumeister/footer";
 
 // Important note //
 // You could also use this file to insert theme related style definitions
