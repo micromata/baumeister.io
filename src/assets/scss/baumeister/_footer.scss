@@ -33,6 +33,7 @@ $footer-text-margin: 15px;
 	// Which are meant to be used only in this module. »Global« variables are stored
 	// in /src/assets/scss/_variables.scss
 	$footer-bg: #f4d37f;
+	$footer-font-color: #23263d;
 
 	// Local mixins
 	//
@@ -57,6 +58,7 @@ $footer-text-margin: 15px;
 
 	.footer-text {
 		margin: $footer-text-margin 0;
+		color: $footer-font-color;
 	}
 
 	.copyright {
