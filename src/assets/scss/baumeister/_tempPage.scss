@@ -1,0 +1,23 @@
+h1 {
+	font-size: 26px;
+
+	@media #{$md-and-above} {
+		font-size: $font-size-h1;
+	}
+}
+
+.logo-wrapper {
+	margin: 30px 0;
+}
+
+.logo {
+	max-width: 75%;
+
+	@media #{$sm-and-above} {
+		max-width: 50%;
+	}
+
+	@media #{$md-and-above} {
+		max-width: 40%;
+	}
+}
