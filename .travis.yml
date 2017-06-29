@@ -4,7 +4,7 @@ node_js:
   - 6
   - 7
   - node
+install:
+  - yarn global add gulpjs/gulp#3f5aba2
 script:
-  - npm run dev
-  - rm -rf server
-  - npm run build
+  - yarn run build
