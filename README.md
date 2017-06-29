@@ -16,7 +16,7 @@
 ## Quick install guide
 
 	$ git clone https://github.com/micromata/baumeister.io.git
-	$ cd baumeister
+	$ cd baumeister.io
 	$ npm install
 
 ## Run
