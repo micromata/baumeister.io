@@ -1,5 +1,9 @@
 # Baumeister.io
 
+<p align="center">
+	<img width="40%" src="https://cdn.rawgit.com/micromata/baumeister-media/master/dist/Baumeister-Logo-Default.svg" alt="Baumeister Logo">
+</p>
+
 > This repository contains the sources of the [Baumeister website](https://baumeister.io).
 
 ## Quick install guide

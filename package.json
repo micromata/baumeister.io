@@ -95,7 +95,9 @@
     "postmerge": "npm install"
   },
   "baumeister": {
-    "bundleCSS": ["prismjs/themes/prism.css"],
+    "bundleCSS": [
+      "prismjs/themes/prism.css"
+    ],
     "bundleExternalJS": [
       "jquery",
       "bootstrap-sass"
