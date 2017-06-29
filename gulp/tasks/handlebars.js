@@ -4,6 +4,7 @@ import gulpsmith from 'gulpsmith';
 
 const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
+const metalsmithPrism = require('metalsmith-prism');
 const registerHelpers = require('metalsmith-register-helpers');
 
 import {settings, useHandlebars} from '../config';
@@ -25,7 +26,8 @@ function handlebars(done) {
 			.use(registerHelpers({
 				directory: 'src/handlebars/helpers'
 			}))
-			.use(markdown())
+			.use(markdown({langPrefix: 'language-'}))
+			.use(metalsmithPrism())
 			.use(layouts({ // Wrap layouts around content pages
 				engine: 'handlebars',
 				rename: true,
