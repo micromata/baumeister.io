@@ -1,3 +1,10 @@
+[![Build Status](https://travis-ci.org/micromata/baumeister.io.svg?branch=master)](https://travis-ci.org/micromata/baumeister.io)
+[![Dependency Status](https://david-dm.org/micromata/baumeister.io.svg)](https://david-dm.org/micromata/baumeister.io)
+[![devDependency Status](https://david-dm.org/micromata/baumeister.io/dev-status.svg)](https://david-dm.org/micromata/baumeister.io#info=devDependencies)
+[![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-orange.svg?style=flat)](CODE_OF_CONDUCT.md)
+[![Join the chat at https://gitter.im/micromata/baumeister](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/micromata/baumeister?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Twitter](https://img.shields.io/badge/Twitter-%40baumeister__io%20-blue.svg?style=flat)](https://twitter.com/baumeister_io)
+
 # Baumeister.io
 
 <p align="center">
