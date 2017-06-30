@@ -38,4 +38,4 @@ $ gulp --tasks
 
 ## The docs
 
-Please take a moment to review the readme files of [Baumeister](https://github.com/micromata/baumeister#readme) and it’s [Yeoman Generator](https://github.com/micromata/generator-baumeister#readme) to see how Baumeister will fulfill you needs.
+Please take a moment to review the readme files of [Baumeister](https://github.com/micromata/baumeister#readme) and it’s [Yeoman Generator](https://github.com/micromata/generator-baumeister#readme) to see how Baumeister will fulfill your needs.
