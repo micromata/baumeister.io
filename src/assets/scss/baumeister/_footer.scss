@@ -7,6 +7,7 @@
 //
 
 $footer-height: 60px;
+$footer-height-xs: 100px;
 $footer-text-margin: 15px;
 
 // Global mixins
@@ -22,6 +23,10 @@ $footer-text-margin: 15px;
 @mixin footer-bodyProps {
 	// Margin bottom by footer height
 	margin-bottom: ($footer-height - $footer-text-margin);
+
+	@media #{$xs-only} {
+		margin-bottom: ($footer-height-xs - $footer-text-margin);
+	}
 }
 
 // Module wrapper
@@ -51,6 +56,10 @@ $footer-text-margin: 15px;
 	background-color: $footer-bg;
 	overflow: hidden;
 
+	@media #{$xs-only} {
+		height: $footer-height-xs;
+	}
+
 	> .container {
 		padding-right: 15px;
 		padding-left: 15px;
@@ -69,6 +78,11 @@ $footer-text-margin: 15px;
 	.copyright {
 		float: right;
 		margin-top: 7px;
+
+		@media #{$xs-only} {
+			float: none;
+			display: block;
+		}
 	}
 
 	.🦄 {
