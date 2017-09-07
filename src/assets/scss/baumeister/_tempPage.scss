@@ -6,6 +6,19 @@ h1 {
 	}
 }
 
+.bmbf {
+	margin: 10px 0 0;
+	max-width: 25%;
+
+	@media #{$lg-and-above} {
+		max-width: 20%;
+	}
+
+	@media #{$xl-and-above} {
+		max-width: 15%;
+	}
+}
+
 .logo-wrapper {
 	margin: 30px 0;
 }
