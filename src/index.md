@@ -2,6 +2,10 @@
 title: The frontend build workflow for your needs
 ---
 
+<img alt="" class="bmbf" src="assets/img/bmbf.svg">
+
+----
+
 <div class="text-center">
 	<h1>Baumeister – The frontend build workflow for your needs</h1>
 </div>
