@@ -26,10 +26,10 @@ For those already using Node, Gulp and stuff.
 $ npm install -g yo
 $ npm install -g generator-baumeister
 $ yo baumeister
-$ gulp --tasks
+$ npm run tasks
 ```
 
-See: <https://github.com/micromata/generator-baumeister>
+See <https://github.com/micromata/generator-baumeister> for details.
 
 ### via Git
 
@@ -37,8 +37,10 @@ See: <https://github.com/micromata/generator-baumeister>
 $ git clone https://github.com/micromata/baumeister.git
 $ cd baumeister
 $ npm install
-$ gulp --tasks
+$ npm run tasks
 ```
+
+See <https://github.com/micromata/baumeister> for details.
 
 ## The docs
 
