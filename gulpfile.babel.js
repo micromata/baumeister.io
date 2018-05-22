@@ -27,7 +27,7 @@ import bumpVersion from './gulp/tasks/bumpVersion';
 import createChangelog from './gulp/tasks/createChangelog';
 import commitChanges from './gulp/tasks/commitChanges';
 import createTag from './gulp/tasks/createTag';
-import validateHtml from './gulp/tasks/validateHtml';
+// import validateHtml from './gulp/tasks/validateHtml';
 import cacheBust from './gulp/tasks/cacheBust';
 import lintStyles from './gulp/tasks/lintStyles';
 import handlebars from './gulp/tasks/handlebars';
@@ -68,10 +68,10 @@ export function watch() {
 			'./src/handlebars/layouts/*.hbs',
 			'./src/handlebars/partials/**/*.hbs',
 			'./src/handlebars/helpers/*.js'
-		], gulp.series(handlebars, gulp.parallel(lintBootstrap, validateHtml, gulp.series(processHtml, reload)))).on('change', informOnChange);
+		], gulp.series(handlebars, gulp.parallel(lintBootstrap, /* validateHtml , */ gulp.series(processHtml, reload)))).on('change', informOnChange);
 		gulp.watch(['./src/handlebars/helpers/*.js'], gulp.parallel(lint)).on('change', informOnChange);
 	} else {
-		gulp.watch(settings.sources.html, gulp.parallel(lintBootstrap, validateHtml, gulp.series(processHtml, reload))).on('change', informOnChange);
+		gulp.watch(settings.sources.html, gulp.parallel(lintBootstrap, /* validateHtml , */ gulp.series(processHtml, reload))).on('change', informOnChange);
 	}
 
 	gulp.watch(settings.sources.images, gulp.series(images, reload)).on('change', informOnChange);
@@ -91,7 +91,7 @@ watch.description = '`gulp watch` watches for changes and runs tasks automatical
 export const build = gulp.series(
 	clean,
 	handlebars,
-	gulp.parallel(processHtml, appTemplates, lint, fonts, images, clientScripts, vendorScripts, styles, bundleExternalCSS, copyStaticFiles, validateHtml, lintBootstrap, lintStyles, security, test),
+	gulp.parallel(processHtml, appTemplates, lint, fonts, images, clientScripts, vendorScripts, styles, bundleExternalCSS, copyStaticFiles, /* validateHtml , */ lintBootstrap, lintStyles, security, test),
 	cacheBust,
 	banners
 );
