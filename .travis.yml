@@ -2,10 +2,7 @@ dist: trusty
 language: node_js
 node_js:
   - 6
-  - 7
+  - 8
   - node
-install:
-  - yarn global add gulpjs/gulp#3f5aba2
-  - yarn
-script:
-  - yarn run build
+before_install: npm i -g gulpjs/gulp#3f5aba2
+script: npm run build
