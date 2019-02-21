@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<!-- Meta, title, CSS, favicons, etc. -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Micromata GmbH">
+	<title>Baumeister</title>
+
+	<!-- Bundled vendor CSS files -->
+	@@vendor.css
+
+	<!-- Our compiled and merged Sass files -->
+	@@app.css
+
+	<!--
+	Replace "no-js" class with "js" in case JavaScript is available.
+	You can delete this when you feel the need to make use of modernizr.
+	-->
+	<script>(function(h){h.className = h.className.replace('no-js', 'js')})(document.documentElement)</script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory. -->
+
+	<!-- Place anything custom after this. But put JS to the end of body. -->
+</head>
+
+<body>
+
+	<!-- begin: content -->
+  <header class="navigation">
+    <div class="nav-container">
+       <div class="brand">
+          <a class="navbar-brand" href="#">
+          <img src="assets/img/Baumeister-Roboter.png" alt="">
+          </a>
+       </div>
+       <nav>
+          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+          <ul class="nav-list" id="navlist">
+             <li>
+                <a href="#!">Start</a>
+             </li>
+             <li>
+                <a href="#anchor-about">About</a>
+             </li>
+             <li>
+                <a href="#anchor-iforp">iFORP</a>
+             </li>
+             <li>
+                <a href="#anchor-screencasts">Screencasts</a>
+             </li>
+             <li>
+                <a href="#anchor-install">Install</a>
+             </li>
+             <li>
+                <a href="#anchor-socials">Socials</a>
+             </li>
+          </ul>
+       </nav>
+    </div>
+ </header>
+ <div class="container-fluid">
+ <div class="row robot-header white">
+       <div class="robot-header-left col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <h1>Baumeister</h1>
+          <div class="robot-flying">
+             <img class="hover_wide" src="assets/img/Baumeister-Roboter.png" alt="Baumeister-Roboter">
+          </div>
+          <div class="robot-burst">
+             <img class="big_boost hover_short1" src="assets/img/big_boost.png" alt="">
+             <img class="middle_boost hover_short2" src="assets/img/middle_boost.png" alt="">
+             <img class="small_boost hover_short3" src="assets/img/small_boost.png" alt="">
+          </div>
+       </div>
+       <div class="robot-header-right col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <h1>The frontend build workflow for your needs</h1>
+          <p>
+             The aim of this project is to help you to build your things.
+             <br>
+             From Bootstrap themes over static websites to single page applications.
+          </p>
+          <div><a class="button" href="#anchor-install" >Install Now</a></div>
+    </div>
+ </div>
+ <div class="row our-patners gray">
+       <div class="patner bmbf col-lg-2 offset-lg-2 col-md-2 offset-md-1 col-ms-12 col-xs-12">
+          <img src="assets/img/bmbf.svg" alt="bmbf" class="img-circle img-responsive center">
+       </div>
+       <div class="patner micromata offset-lg-1 offset-md-2 col-lg-2 col-md-2 col-ms-12 col-xs-12">
+          <img src="assets/img/MICROMATA_pfeile_gross_RGB.svg" alt="Micromata" class="img-circle img-responsive center">
+       </div>
+       <div class="patner offset-lg-1 offset-md-1 col-lg-2 col-md-2 col-ms-12 col-xs-12">
+          <img src="assets/img/DLR.png" alt="DLR">
+       </div>
+ </div>
+ <div class="row">
+    <div id="anchor-about" class="about white col-lg-12 col-md-12 col-ms-12 col-xs-12">
+       <h2>What advantages does Baumeister offer?</h2>
+       <p>
+          The administration of dependencies can be completely solved via the `package.json` of the project. No additional file needs to be modified, e.g. if new libraries or files like fonts need to be added to the JavaScript and CSS bundles. The package.json section `baumeister' contains the properties `bundleCSS`, `bundleExternalJS` and `includeStaticFiles` for this purpose.
+          <br><br>
+          Another advantage of Baumeister over other solutions is the simple adaptation of automation tasks through the maintainable structure. Each task is a separate ES6 module and in the Gulpfile these tasks are only plugged together. If a task is not needed during the entire automation process, it can therefore be localized very quickly and easily deactivated - even if you are not familiar with Baumeister's overall structure.
+       </p>
+    </div>
+ </div>
+ <div class="row">
+    <div id="anchor-iforp" class="iforp gray col-lg-12 col-md-12 col-ms-12 col-xs-12">
+       <h2>What offers iFORP</h2>
+       <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+       </p>
+       <div><a class="button" href="https://www.google.de" >Get iForp Now!</a></div>
+    </div>
+ </div>
+ <div class="row">
+    <div id="anchor-screencasts" class="screencast white col-lg-12 col-md-12 col-ms-12 col-xs-12">
+       <h2>Screencasts</h2>
+       <p>We have recorded some screencasts to help you to get started using Baumeister for prototyping with HTML / Handlebars. We have published the first three episodes which only provide a german audio track for now.</p>
+       <div id="accordion">
+          <div class="card">
+             <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                HTML-Prototyping mit Baumeister Teil 1 &#x2013; Installation
+                </a>
+             </div>
+             <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                   <div style="padding:56.25% 0 0 0;position:relative"><iframe src="https://player.vimeo.com/video/268572516?color=75B7DD&amp;title=0&amp;byline=0&amp;portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                   <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+             </div>
+          </div>
+          <div class="card">
+             <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                HTML-Prototyping mit Baumeister Teil 2 &#x2013; Erste Schritte nach der Installation
+                </a>
+             </div>
+             <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                   <div style="padding:56.25% 0 0 0;position:relative"><iframe src="https://player.vimeo.com/video/268574813?color=75B7DD&amp;title=0&amp;byline=0&amp;portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                   <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+             </div>
+          </div>
+          <div class="card">
+             <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                HTML-Prototyping mit Baumeister Teil 3 &#x2013; Handlebars Templates
+                </a>
+             </div>
+             <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                   <div style="padding:56.25% 0 0 0;position:relative"><iframe src="https://player.vimeo.com/video/268576053?color=75B7DD&amp;title=0&amp;byline=0&amp;portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                   <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <div class="row">
+    <div id="anchor-install" class="install gray col-lg-12 col-md-12 col-ms-12 col-xs-12">
+       <h2>Quick install guide</h2>
+       <h6>For those already using Node, Gulp and stuff.</h6>
+       <div class="viaYeoman">
+          <p>via <strong>Yeoman</strong></p>
+          <pre class="language-bash"><code class="language-bash">$ npm <span class="token function">install</span> -g yo
+$ npm <span class="token function">install</span> -g generator-baumeister
+$ yo baumeister
+$ npm run tasks
+       </code></pre>
+          <p>See https://github.com/<wbr>micromata/generator-baumeister for details.</p>
+       </div>
+       <div class="viaGit">
+          <p>via <strong>Git</strong></p>
+          <pre class="language-bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/micromata/baumeister.git
+$ <span class="token function">cd</span> baumeister
+$ npm <span class="token function">install</span>
+$ npm run tasks
+       </code></pre>
+          <p>See https://github.com/<wbr>micromata/baumeister for details.</p>
+       </div>
+    </div>
+ </div>
+ <div class="row">
+    <div id="anchor-socials" class="keepintouch white col-lg-12 col-md-12 col-ms-12 col-xs-12">
+       <h2>Our Socials</h2>
+       <h6>Baumeister on...</h6>
+       <div class="our_socials">
+          <div class='wrp'>
+             <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/baumeister_io" class='icon-twitter icon'>
+                <i class='fab fa-twitter'></i>
+                <p>Twitter</p>
+             </a>
+             <a target="_blank" rel="noopener noreferrer" href="https://github.com/micromata/baumeister" class='icon icon-github'>
+                <i class='fab fa-github'></i>
+                <p>Github</p>
+             </a>
+             <a target="_blank" rel="noopener noreferrer" href="https://labs.micromata.de/projects/baumeister.html" class='icon icon-labs'>
+                <i class='fas fa-flask'></i>
+                <p>Micromata Labs</p>
+             </a>
+          </div>
+       </div>
+    </div>
+ </div>
+</div>
+ <footer class="gray">
+    <div class="container ">
+       <p class="footer-text text-muted">
+          <span class="copyright">
+          © 2019 <a href="https://www.micromata.de/">Micromata</a>
+          | <a href="https://www.micromata.de/impressum/">Impressum</a>
+          | <a href="https://www.micromata.de/datenschutz/">Datenschutz</a>
+          </span>
+       </p>
+    </div>
+ </footer>
+	<!-- end: content -->
+
+	<!-- webpack runtime JS -->
+	@@runtime.js
+
+	<!-- Vendor JS -->
+	@@vendor.js
+
+	<!-- Own JS -->
+	@@app.js
+
+<!-- External scripts (eg. analytics) should be placed here -->
+</body>
+</html>
