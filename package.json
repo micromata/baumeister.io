@@ -46,7 +46,6 @@
     "clean": "del .webpack-assets.json dist",
     "clean:dev": "del .webpack-assets.json server",
     "tasks": "ntl -d -o",
-    "postinstall": "chalk -t '{green Installed Baumeister successfully.\n{white Run} {yellow npm run tasks} {white to list and run the most importants npm scripts.}}'",
     "prettier": "prettier",
     "prettier:write": "npm run prettier --silent -- --write",
     "prettier:write:all": "npm run prettier --silent -- --write \"{{src,build}/**/*.{js,json,scss},./*.{js,json}}\"",
