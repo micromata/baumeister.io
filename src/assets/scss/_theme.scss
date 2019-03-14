@@ -18,7 +18,7 @@
 // maintainability.
 
 @import './node_modules/bootstrap/scss/bootstrap';
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import 'https://fonts.googleapis.com/css?family=Schoolbell';
 
 @include media-breakpoint-up(xs);
@@ -41,7 +41,7 @@ $content-width: 64%;
 
 html {
   background-color: lightgrey;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
 }
 
 .white {
@@ -262,7 +262,7 @@ footer {
   margin-top: 50px;
 }
 
-.our-patners {
+.our-partners {
   padding: 10px 0;
   display: flex;
   align-items: center;
@@ -523,7 +523,7 @@ p {
   font-size: 18px;
 }
 
-.patner {
+.partner {
   text-align: center;
   margin: 15px 0;
   img {
