@@ -8,7 +8,9 @@
 // Own modules
 // --------------------------------------------------
 // @import "theme/testResponsiveHelpers"; // debug
+@import 'theme/variables';
 @import 'theme/footer';
+@import 'theme/socials';
 
 // Important note //
 // You could also use this file to insert theme related style definitions
@@ -17,7 +19,6 @@
 // of code. Otherwise it will definitely have a negative impact on
 // maintainability.
 
-@import './node_modules/bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import 'https://fonts.googleapis.com/css?family=Schoolbell';
 
@@ -26,18 +27,6 @@
 @include media-breakpoint-up(md);
 @include media-breakpoint-up(lg);
 @include media-breakpoint-up(xl);
-
-$background-main-white: #fff;
-$background-main-gray: #e9ecef;
-$content-width-navbar: 100%;
-$breakpoint: 799px;
-$nav-height: 70px;
-$nav-background: $background-main-gray;
-$nav-font-color: #111;
-$nav-font-hover-color: #fff;
-$link-hover-color: darkgrey;
-$section-padding: 150px 0 150px 0;
-$content-width: 64%;
 
 html {
   background-color: lightgrey;
@@ -241,25 +230,6 @@ footer {
   .footer-text {
     margin: 15px 0;
   }
-}
-
-.keepintouch {
-  padding: $section-padding;
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  h6 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-}
-
-.our_socials {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 50px;
 }
 
 .our-partners {
@@ -535,104 +505,6 @@ p {
   height: 70px;
   margin-bottom: 0;
   margin-right: -30px;
-}
-
-.clickable {
-  cursor: pointer;
-}
-
-.wrp {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  &::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-  }
-}
-
-.icon-github:hover {
-  color: #333 !important;
-  text-decoration: none !important;
-}
-
-.icon-labs {
-  margin-left: 80px;
-  &:hover {
-    color: green !important;
-    text-decoration: none !important;
-  }
-}
-
-.icon-twitter {
-  margin-right: 80px;
-  &:hover {
-    color: #00aced !important;
-    text-decoration: none !important;
-  }
-}
-
-.icon {
-  color: $background-main-gray;
-  display: inline-block;
-  font-size: 50px;
-  line-height: 50px;
-  height: 50px;
-  width: 70px;
-  border-radius: 100%;
-  position: relative;
-  a {
-    color: gray;
-  }
-  p {
-    display: none;
-    font-size: 15px;
-    text-align: center;
-  }
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 100%;
-    z-index: -1;
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-    transform: scale(0);
-    border-radius: 100%;
-    z-index: -1;
-  }
-  &:hover {
-    animation-name: bubble;
-    animation-duration: 0.5s;
-    animation-delay: 0.1s;
-    animation-fill-mode: forwards;
-    p {
-      display: block;
-    }
-  }
-}
-
-@keyframes bubble {
-  100% {
-    transform: scale(1.2);
-  }
 }
 
 @media (max-width: 998px) {
