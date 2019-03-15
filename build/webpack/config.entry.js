@@ -16,9 +16,12 @@ function getVendorCSS() {
       globby.sync(`./node_modules/${glob}`)
     )
   );
+  console.dir(vendorCSS);
   if (!vendorCSS.length) {
     return false;
   }
 
-  return { vendor: vendorCSS };
+  const config = { vendor: vendorCSS };
+  console.dir(config);
+  return config;
 }

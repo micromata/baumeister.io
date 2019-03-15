@@ -6,7 +6,7 @@ export const optimization = {
   },
   splitChunks: {
     cacheGroups: {
-      commons: {
+      common: {
         test: /[\\/]node_modules[\\/]/,
         name: 'vendor',
         chunks: 'all'

@@ -1,59 +1,36 @@
-//
-// Footer
-// --------------------------------------------------
-// Custom footer styles
-
-// Global variables
-//
-
-$footer-height: 60px;
-$footer-text-margin: 20px;
-
-// Global mixins
-//
-
-// Called in _scaffolding.scss
-@mixin footer-htmlProps {
-  position: relative;
-  min-height: 100%;
-}
-
-// Called in _scaffolding.scss
-@mixin footer-bodyProps {
-  // Margin bottom by footer height
-  margin-bottom: ($footer-height - $footer-text-margin);
-}
-
-// Module wrapper
-
-.footer {
-  // Local variables
-  //
-  // Which are meant to be used only in this module. »Global« variables are stored
-  // in /src/assets/scss/_variables.scss
-  $footer-bg: #f5f5f5;
-
-  // Local mixins
-  //
-  // Which are meant to be used only in this module. »Global« mixins are stored
-  // in /src/assets/scss/theme/_mixins.scss
-
-  // Styles
-  //
-  position: absolute;
+footer {
   bottom: 0;
   width: 100%;
-
-  // Set the fixed height of the footer here
-  height: $footer-height;
-  background-color: $footer-bg;
-
-  > .container {
+  height: 60px;
+  overflow: hidden;
+  .container {
     padding-right: 15px;
     padding-left: 15px;
   }
+  .copyright {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
+    float: right;
+  }
   .footer-text {
-    margin: $footer-text-margin 0;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 460px) {
+  footer {
+    height: 82px;
+  }
+  .copyright {
+    float: left;
+  }
+}
+
+@media (max-width: 365px) {
+  footer {
+    height: 125px;
   }
 }
