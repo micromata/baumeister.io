@@ -1,19 +1,29 @@
 /**
  * @file  JavaScript entry point of the project
- * @author Michael Kühnel <m.kuehnel@micromata.de>
  */
 
-import $ from 'jquery';
-import {consoleErrorFix, ieViewportFix} from './base';
+// Import the whole Bootstrap JS bundle
+import 'bootstrap';
 
-// This is necessary because bootstrap itself checks the existence of jQuery with window.jQuery.
-global.jQuery = $;
+// Or import only what you need to keep your vendor bundle small
+// import 'bootstrap/js/dist/util';
+// import 'bootstrap/js/dist/dropdown';
 
-// Because of bootstrap is not an UMD Module, we can’t import it with ES6 syntax.
-require('bootstrap-sass');
+// Import polyfills
+import { applyPolyfills } from './base/polyfills';
 
-$(() => {
-	consoleErrorFix();
-	ieViewportFix();
-	console.log('YaY, my first ES6-Module !!!!');
+// Import methods from the base module
+import { consoleErrorFix, ieViewportFix } from './base/base';
+
+// Import our Sass entrypoint to create the CSS app bundle
+import '../assets/scss/index.scss';
+
+$(async () => {
+  // Wait with further execution until needed polyfills are loaded.
+  await applyPolyfills();
+
+  consoleErrorFix();
+  ieViewportFix();
+
+  console.log('YaY, my first ES6-Module !!!!');
 });

@@ -9,12 +9,13 @@ node_modules
 ### Build ###
 dist
 server
-src/assets/css
-.browserify-cache-client.json
-.browserify-cache-vendor.json
 coverage
 .metalsmith-build
+.eslintcache
+.webpack-stats.json
+.webpack-assets.json
 
 ### Dev ###
 *.sublime-project
 *.sublime-workspace
+.vscode

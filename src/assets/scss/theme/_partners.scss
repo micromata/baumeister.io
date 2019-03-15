@@ -1,0 +1,48 @@
+.our-partners {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partner {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  img {
+    height: 100px;
+  }
+}
+
+.micromata img {
+  height: 70px;
+  margin-bottom: 0;
+  margin-right: -30px;
+}
+
+@media (max-width: 998px) {
+  .micromata {
+    margin-left: 132px;
+  }
+}
+
+@media (max-width: 862px) {
+  .micromata {
+    margin-left: 90px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .micromata {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .icon {
+    font-size: 50px;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+  }
+}

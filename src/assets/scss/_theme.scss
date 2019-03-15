@@ -1,0 +1,62 @@
+// Override and extend Bootstrap stuff
+// --------------------------------------------------
+// Files, classes, mixins etc.
+@import 'theme/mixins';
+//@import 'theme/scaffolding';
+@import 'theme/alerts';
+
+// Own modules
+// --------------------------------------------------
+// @import "theme/testResponsiveHelpers"; // debug
+@import 'theme/variables';
+@import 'theme/screencast';
+@import 'theme/iforp';
+@import 'theme/footer';
+@import 'theme/header';
+@import 'theme/navbar';
+@import 'theme/partners';
+@import 'theme/socials';
+@import 'theme/about';
+@import 'theme/install';
+
+// Important note //
+// You could also use this file to insert theme related style definitions
+// directly within this file. But we recommend keeping your Sass code in
+// separate files like the examples above when you exceed a few hundred lines
+// of code. Otherwise it will definitely have a negative impact on
+// maintainability.
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import 'https://fonts.googleapis.com/css?family=Schoolbell';
+
+@include media-breakpoint-up(xs);
+@include media-breakpoint-up(sm);
+@include media-breakpoint-up(md);
+@include media-breakpoint-up(lg);
+@include media-breakpoint-up(xl);
+
+html {
+  background-color: lightgrey;
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  margin-bottom: 0;
+}
+
+.white {
+  background-color: $background-main-white;
+}
+
+.gray {
+  background-color: $background-main-gray;
+}
+
+.container-fluid {
+  overflow: auto;
+}
+
+p {
+  line-height: 165%;
+  font-size: 20px;
+}

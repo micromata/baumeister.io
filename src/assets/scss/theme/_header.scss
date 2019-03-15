@@ -1,0 +1,139 @@
+@import 'variables';
+
+@include media-breakpoint-up(xs);
+@include media-breakpoint-up(sm);
+@include media-breakpoint-up(md);
+@include media-breakpoint-up(lg);
+@include media-breakpoint-up(xl);
+
+.robot-header {
+  display: flex;
+  margin: 150px 0;
+}
+
+.robot-header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.robot-header-right {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-self: center;
+  padding: 0 100px 0 30px !important;
+  margin-top: 50px;
+  a {
+    margin-top: 20px;
+    align-self: center;
+    flex: 1 1 auto;
+    font-weight: 700;
+    padding: 20px;
+    border: 2px solid white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #f3c532;
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      background-color: #e79437;
+      border-color: none;
+      text-decoration: none;
+    }
+  }
+  p {
+    font-size: 25px !important;
+    margin-bottom: 40px;
+  }
+}
+
+.robot-flying {
+  img {
+    margin-top: 50px;
+    height: 300px;
+    width: auto;
+  }
+}
+
+.robot-burst {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.big_boost {
+  height: 20px;
+  align-self: center;
+}
+
+.middle_boost {
+  height: 17px;
+  align-self: center;
+}
+
+.small_boost {
+  height: 16px;
+  align-self: center;
+}
+
+.hover_wide {
+  -webkit-animation: mover-wide 1s infinite alternate;
+  animation: mover-wide 1s infinite alternate;
+}
+
+@keyframes mover-wide {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
+.hover_short1 {
+  -webkit-animation: mover-short1 1s infinite alternate;
+  animation: mover-short1 1s infinite alternate;
+}
+
+@keyframes mover-short1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.hover_short2 {
+  -webkit-animation: mover-short2 1s infinite alternate;
+  animation: mover-short2 1s infinite alternate;
+}
+
+@keyframes mover-short2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-13px);
+  }
+}
+
+.hover_short3 {
+  -webkit-animation: mover-short3 1s infinite alternate;
+  animation: mover-short3 1s infinite alternate;
+}
+
+@keyframes mover-short3 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-16px);
+  }
+}

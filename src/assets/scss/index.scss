@@ -1,9 +1,20 @@
 // Import our variables to override Bootstraps default ones
-@import "./variables";
+@import './variables';
 
 // Bootstrap Core
 // --------------------------------------------------
-@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+// Or import only what you need to keep your vendor bundle small
+// See "../../../node_modules/bootstrap/scss/bootstrap" for available files
+// @import "functions";
+// @import "variables";
+// @import "mixins";
+// @import "root";
+// @import "reboot";
+// @import "type";
+// @import "images";
+// @import "code";
 
 /**
  * --------------------------------------------------
@@ -12,7 +23,7 @@
 
 // Theme
 // --------------------------------------------------
-@import "./baumeister";
+@import './theme';
 
 // Print Styles
 // --------------------------------------------------

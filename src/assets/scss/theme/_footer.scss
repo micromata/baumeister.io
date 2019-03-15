@@ -1,0 +1,36 @@
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .copyright {
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    float: right;
+  }
+  .footer-text {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 460px) {
+  footer {
+    height: 82px;
+  }
+  .copyright {
+    float: left;
+  }
+}
+
+@media (max-width: 365px) {
+  footer {
+    height: 125px;
+  }
+}
