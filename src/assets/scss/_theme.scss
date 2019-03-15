@@ -10,6 +10,8 @@
 // @import "theme/testResponsiveHelpers"; // debug
 @import 'theme/variables';
 @import 'theme/footer';
+@import 'theme/header';
+@import 'theme/partners';
 @import 'theme/socials';
 
 // Important note //
@@ -31,6 +33,10 @@
 html {
   background-color: lightgrey;
   font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  margin-bottom: 0;
 }
 
 .white {
@@ -232,13 +238,6 @@ footer {
   }
 }
 
-.our-partners {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .about {
   display: flex;
   flex-direction: column;
@@ -346,88 +345,6 @@ footer {
   }
 }
 
-.robot-header {
-  display: flex;
-  margin: 150px 0;
-  //height: 600px
-}
-
-.robot-header-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  media-breakpoint-down(md) {
-    display: none;
-  }
-}
-
-.robot-header-right {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-self: center;
-  padding: 0 100px 0 30px !important;
-  margin-top: 50px;
-  a {
-    margin-top: 20px;
-    align-self: center;
-    flex: 1 1 auto;
-    font-weight: 700;
-    padding: 20px;
-    border: 2px solid white;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #f3c532;
-    color: black;
-    text-decoration: none;
-    &:hover {
-      color: white;
-      background-color: #e79437;
-      border-color: none;
-      text-decoration: none;
-    }
-  }
-  p {
-    font-size: 25px !important;
-    margin-bottom: 40px;
-  }
-}
-
-.robot-flying {
-  img {
-    margin-top: 50px;
-    height: 300px;
-    width: auto;
-  }
-}
-
-.robot-burst {
-  margin-top: -20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.big_boost {
-  height: 20px;
-  align-self: center;
-}
-
-.middle_boost {
-  height: 17px;
-  align-self: center;
-}
-
-.small_boost {
-  height: 16px;
-  align-self: center;
-}
-
-.hover_wide {
-  -webkit-animation: mover-wide 1s infinite alternate;
-  animation: mover-wide 1s infinite alternate;
-}
-
 a.card-link {
   color: inherit;
   text-decoration: none;
@@ -491,47 +408,6 @@ p {
 
 .language-bash {
   font-size: 18px;
-}
-
-.partner {
-  text-align: center;
-  margin: 15px 0;
-  img {
-    height: 100px;
-  }
-}
-
-.micromata img {
-  height: 70px;
-  margin-bottom: 0;
-  margin-right: -30px;
-}
-
-@media (max-width: 998px) {
-  .micromata {
-    margin-left: 132px;
-  }
-}
-
-@media (max-width: 862px) {
-  .micromata {
-    margin-left: 90px !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .micromata {
-    margin-left: 0 !important;
-  }
-}
-
-@media (max-width: 640px) {
-  .icon {
-    font-size: 50px;
-    line-height: 50px;
-    height: 50px;
-    width: 50px;
-  }
 }
 
 @media (max-width: 460px) {
